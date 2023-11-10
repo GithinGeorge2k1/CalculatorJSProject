@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Githin's Calculator</title>
+        <link rel="stylesheet" href="global.css">
+        <script src="logic.js"></script>
+    </head>
+
+    <body>
+        <div class="calculatorParent">
+            <div class="calculatorWrapper">
+                <div class="calculatorTitleSection">
+                    CALCULATOR
+                </div>
+                <div class="calculatorInputSection">
+                    <h1 id="calculatorInput" class="calculatorInputPlaceholder">Let's See</h1>
+                </div>
+                <div class="calculatorOpSection">
+                    <div class="operators">
+                        <button class="clearBtn" onclick="clearInput()">C</button>
+                        <button class="backBtn" onclick="backInput()">[x</button>
+                        <button class="addBtn" onclick="updateInput(this)">+</button>
+                        <button class="subBtn" onclick="updateInput(this)">-</button>
+                        <button class="mulBtn" onclick="updateInput(this)">*</button>
+                        <button class="divBtn" onclick="updateInput(this)">/</button>
+                        <button class="eqBtn" onclick="evalInput()">=</button>
+                        <button class="dotBtn" onclick="updateInput(this)">.</button>
+                    </div>
+                    <div class="digits">
+                        <button class="digitBtn" onclick="updateInput(this)">1</button>
+                        <button class="digitBtn" onclick="updateInput(this)">2</button>
+                        <button class="digitBtn" onclick="updateInput(this)">3</button>
+                        <button class="digitBtn" onclick="updateInput(this)">4</button>
+                        <button class="digitBtn" onclick="updateInput(this)">5</button>
+                        <button class="digitBtn" onclick="updateInput(this)">6</button>
+                        <button class="digitBtn" onclick="updateInput(this)">7</button>
+                        <button class="digitBtn" onclick="updateInput(this)">8</button>
+                        <button class="digitBtn" onclick="updateInput(this)">9</button>
+                        <button class="digitBtn" onclick="updateInput(this)">0</button>
+                    </div>
+                    <div class="scientific">
+
+                    </div>
+                    <div class="other">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
